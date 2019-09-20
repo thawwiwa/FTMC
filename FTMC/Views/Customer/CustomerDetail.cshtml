@@ -1,0 +1,14 @@
+﻿@model FTMC.Models.Customer
+
+@{
+    ViewData["Title"] = "CustomerDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>CustomerDetail</h1>
+<form>
+    <div>รหัส : @Html.DisplayFor(model => model.CustomerID)</div>
+    <div>ชื่อ  : @Html.DisplayFor(model => model.CustomerName)</div>
+    <div>อีเมล : @Html.DisplayFor(model => model.CustomerEmail)</div>
+</form>
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTMC", "FTMC\FTMC.csproj", "{49E0DBAD-4941-4048-898D-77C2788633CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49E0DBAD-4941-4048-898D-77C2788633CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E0DBAD-4941-4048-898D-77C2788633CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E0DBAD-4941-4048-898D-77C2788633CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E0DBAD-4941-4048-898D-77C2788633CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11A7E3AF-0840-4988-9A67-6BFB6B71B146}
+	EndGlobalSection
+EndGlobal

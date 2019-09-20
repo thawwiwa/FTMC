@@ -1,0 +1,50 @@
+﻿@model IEnumerable<FTMC.Models.Customer>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>This Customer ViewIndex</h1>
+
+<h2>Table Customer</h2>
+
+<button>ORDER BY ASC</button>
+<button>ORDER By DESC</button>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.CustomerID)</th>
+            <th>@Html.DisplayNameFor(model => model.CustomerName)</th>
+            <th>@Html.DisplayNameFor(model => model.CustomerEmail)</th>
+            <th>@Html.DisplayNameFor(model => model.CustomerBudget)</th>
+            <th>@Html.DisplayNameFor(model => model.CustomerUsed)</th>
+            <th>@Html.DisplayNameFor(model => model.CountryCode)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.CustomerID)</td>
+                <td>@Html.DisplayFor(modelItem => item.CustomerName)</td>
+                <td>@Html.DisplayFor(modelItem => item.CustomerEmail)</td>
+                <td>@Html.DisplayFor(modelItem => item.CustomerBudget)</td>
+                <td>@Html.DisplayFor(modelItem => item.CustomerUsed)</td>
+                <td>@Html.DisplayFor(modelItem => item.CountryCode)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@section scripts{ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert("Hello");
+        });
+
+    </script>
+}
