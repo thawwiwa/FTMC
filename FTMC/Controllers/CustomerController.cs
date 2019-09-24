@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using FTMC.Datas;
 using FTMC.Models;
@@ -29,6 +30,14 @@ namespace FTMC.Controllers
         {
             var detail = await _context.Customer.FirstOrDefaultAsync( w => w.CustomerID == 2 );
             return View(detail);
+        }
+
+        [Route("api/[controller]/[action]")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Customer>>> GetData()
+        {
+            var customer = await _context.Customer.ToListAsync();
+            return Ok(customer);
         }
     }
 }
